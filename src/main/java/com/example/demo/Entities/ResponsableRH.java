@@ -17,5 +17,5 @@ public class ResponsableRH extends Utilisateur {
 		super(username, password);
 		// TODO Auto-generated constructor stub
 	}
-    // Ajoutez les propriétés spécifiques aux responsables RH si nécessaire
+    
 }
