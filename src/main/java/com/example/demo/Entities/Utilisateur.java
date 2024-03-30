@@ -1,53 +1,46 @@
 package com.example.demo.Entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
+
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Utilisateur {
 	
-	 private String identifiant;
-	    private String motDePasse;
-	    private String nom;
-	    private String email;
-	    private String poste;
-	    private String nnnn;
-		public String getIdentifiant() {
-			return identifiant;
-		}
-		public void setIdentifiant(String identifiant) {
-			this.identifiant = identifiant;
-		}
-		public String getMotDePasse() {
-			return motDePasse;
-		}
-		public void setMotDePasse(String motDePasse) {
-			this.motDePasse = motDePasse;
-		}
-		public String getNom() {
-			return nom;
-		}
-		public void setNom(String nom) {
-			this.nom = nom;
-		}
-		public String getEmail() {
-			return email;
-		}
-		public void setEmail(String email) {
-			this.email = email;
-		}
-		public String getPoste() {
-			return poste;
-		}
-		public void setPoste(String poste) {
-			this.poste = poste;
-		}
-		public Utilisateur(String identifiant, String motDePasse, String nom, String email, String poste) {
+	
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+	    private String username;
+	    private String password;
+		public Utilisateur(String username, String password) {
 			super();
-			this.identifiant = identifiant;
-			this.motDePasse = motDePasse;
-			this.nom = nom;
-			this.email = email;
-			this.poste = poste;
+			this.username = username;
+			this.password = password;
+		}
+		public Long getId() {
+			return id;
+		}
+		public void setId(Long id) {
+			this.id = id;
+		}
+		public String getUsername() {
+			return username;
+		}
+		public void setUsername(String username) {
+			this.username = username;
+		}
+		public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
 		}
 	    
-		
-		
-		
-}
+	    
+	    
+	}
