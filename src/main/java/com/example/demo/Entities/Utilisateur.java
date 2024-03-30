@@ -7,6 +7,7 @@ public class Utilisateur {
 	    private String nom;
 	    private String email;
 	    private String poste;
+	    private String nnnn;
 		public String getIdentifiant() {
 			return identifiant;
 		}
