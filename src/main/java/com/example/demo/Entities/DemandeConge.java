@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.example.demo.entities;
 
 import java.util.Date;
 
@@ -14,7 +14,7 @@ public class DemandeConge {
     private String typeConge;
     private String etatDemande; // En attente, approuvée, refusée
     @ManyToOne
-    private User demandeur;
+    private Utilisateur demandeur;
     // Getters and setters
 	public Long getId() {
 		return id;
@@ -46,13 +46,13 @@ public class DemandeConge {
 	public void setEtatDemande(String etatDemande) {
 		this.etatDemande = etatDemande;
 	}
-	public User getDemandeur() {
+	public Utilisateur	 getDemandeur() {
 		return demandeur;
 	}
-	public void setDemandeur(User demandeur) {
+	public void setDemandeur(Utilisateur demandeur) {
 		this.demandeur = demandeur;
 	}
-	public DemandeConge(Date dateDebut, Date dateFin, String typeConge, String etatDemande, User demandeur) {
+	public DemandeConge(Date dateDebut, Date dateFin, String typeConge, String etatDemande, Utilisateur demandeur) {
 		super();
 		this.dateDebut = dateDebut;
 		this.dateFin = dateFin;

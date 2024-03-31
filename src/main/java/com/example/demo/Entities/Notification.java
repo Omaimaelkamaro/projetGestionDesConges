@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.example.demo.entities;
 
 import jakarta.persistence.*;
 
@@ -9,6 +9,6 @@ public class Notification {
     private Long id;
     private String contenu;
     @ManyToOne
-    private User destinataire;
+    private Utilisateur destinataire;
     // Getters and setters
 }
