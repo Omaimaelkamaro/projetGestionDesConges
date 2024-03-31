@@ -1,7 +1,7 @@
-package com.example.demo.entities;
+package com.example.demo.Entities;
 
 
-import com.example.demo.entities.*;
+import com.example.demo.Entities.*;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
