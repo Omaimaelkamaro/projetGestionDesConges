@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class PDG extends Utilisateur{
+public class PDG extends com.example.demo.entities.Utilisateur {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

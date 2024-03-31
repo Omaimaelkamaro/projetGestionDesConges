@@ -17,6 +17,7 @@ public class Utilisateur {
 	    private Long id;
 	    private String username;
 	    private String password;
+		public Utilisateur(){}
 		public Utilisateur(String username, String password) {
 			super();
 			this.username = username;
